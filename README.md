@@ -1,6 +1,6 @@
 # Platzi Virtual Machine
 
-The Platzi Virtual Machine (PVM) is a virtualized stack-based architecture machine. Its word size (and size of stack items) is 256-bit with a memory model that is a simple word-addressed byte array. The stack has a maximum size of 1024 and it uses an independent storage model based on a modified Merkle Particia Tree. All locations in both storage and memory are well defined initially as zero
+The Platzi Virtual Machine (RVM) is a virtualized stack-based architecture machine. Its word size (and size of stack items) is 256-bit with a memory model that is a simple word-addressed byte array. The stack has a maximum size of 1024 and it uses an independent storage model based on a modified Merkle Particia Tree. All locations in both storage and memory are well defined initially as zero
 
 ## Usage
 
@@ -13,7 +13,7 @@ yarn
 Then, use the CLI to manually test a bytecode input
 
 ```sh
-yarn pvm --code 0x6080 --gasLimit 100
+yarn rvm --code 0x6080 --gasLimit 100
 PUSH1   @ pc=0   gas=100         cost=3
 Stack:   [ '0x80' ]
 Memory:  []

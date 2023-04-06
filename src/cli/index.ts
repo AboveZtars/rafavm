@@ -5,25 +5,25 @@ import ExecutionContext from "../classes/execution";
 import LevelDB from "../classes/storage";
 import { DB_PATH } from "../constants";
 
-interface PVMOptions {
+interface RVMOptions {
   code: string;
   gasLimit: number;
 }
 
-const pvm: Command<PVMOptions> = {
-  name: "pvm",
+const rvm: Command<RVMOptions> = {
+  name: "rvm",
   description: "Platzi Virtual Machine execution environment",
   optionDefinitions: [
     {
       name: "code",
-      description: "Bytecode to execute by the PVM",
+      description: "Bytecode to execute by the RVM",
       type: "string",
       alias: "c",
       isRequired: true,
     },
     {
       name: "gasLimit",
-      description: "Available gas for the PVM execution",
+      description: "Available gas for the RVM execution",
       type: "number",
       alias: "g",
       isRequired: true,
@@ -43,4 +43,4 @@ const pvm: Command<PVMOptions> = {
   },
 };
 
-runCli({ rootCommand: pvm, argv: process.argv });
+runCli({ rootCommand: rvm, argv: process.argv });
