@@ -1,6 +1,6 @@
-# Platzi Virtual Machine
+# Rafa Virtual Machine
 
-The Platzi Virtual Machine (PVM) is a virtualized stack-based architecture machine. Its word size (and size of stack items) is 256-bit with a memory model that is a simple word-addressed byte array. The stack has a maximum size of 1024 and it uses an independent storage model based on a modified Merkle Particia Tree. All locations in both storage and memory are well defined initially as zero
+The Rafa Virtual Machine (RVM) is a virtualized stack-based architecture machine. Its word size (and size of stack items) is 256-bit with a memory model that is a simple word-addressed byte array. The stack has a maximum size of 1024 and it uses an independent storage model based on a modified Merkle Particia Tree. All locations in both storage and memory are well defined initially as zero
 
 ## Usage
 
